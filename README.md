@@ -1,10 +1,26 @@
 # Список потенциальных задач на собеседованиях
-## 1. Часы и минуты
+## Java
+### 1. Часы и минуты
 Напишите, пожалуйста, на Java метод, который будет вычислять угол между часовой и минутной стрелками часов. На вход функции подается время в виде двух переменных: "hours" и "minutes"
 
-[Code](https://my.telegram.org/auth)
+[Code](https://github.com/kssadomtsev/PossibleInterviewTasks/tree/master/src/task1)
 
-## 2. Часы и минуты
+### 2. Часы и минуты
 Через стримы подсчитать количество повторений в тексте
  
-[Code](https://my.telegram.org/auth)
+[Code](https://github.com/kssadomtsev/PossibleInterviewTasks/tree/master/src/task2)
+
+### 3. Подсчет букв в строке A-Z
+/**
+* Дана строка, состоящая из букв A-Z:
+* "AAAABBBCCXYZDDDDEEEFFFAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+* Нужно написать функцию RLE, которая на выходе даст строку вида:
+* "A4B3C2XYZD4E3F3A6B28"
+* И сгенерирует любую ошибку, если на вход пришла невалидная строка.
+*
+* Пояснения:
+* 1. Если символ встречается 1 раз, он остается без изменений
+* 2. Если символ повторяется более 1 раза, к нему добавляется количество повторений
+*/\
+
+[Code](https://github.com/kssadomtsev/PossibleInterviewTasks/tree/master/src/task3)
