@@ -22,14 +22,16 @@ public class RLE {
         }
     }
 
-    private static void formatInput(String input) throws Exception {
+    private static void formatInput(String input) throws InvalidParameterException {
         StringBuilder stringBuilder = new StringBuilder();
         int i = 0;
         while (i < input.length()) {
             char currentCharacter = input.charAt(i);
             int count = 1;
             while (i < input.length() - 1) {
-                checkCharacter(input.charAt(i));
+                if (!Character.isAlphabetic(input.charAt(i))) {
+                    throw new InvalidParameterException("Invalid character");
+                }
                 if (input.charAt(i + 1) == currentCharacter) {
                     count++;
                     i++;
@@ -42,11 +44,4 @@ public class RLE {
         }
         System.out.println(stringBuilder.toString());
     }
-
-    private static void checkCharacter(char ch) throws Exception {
-        if (!Character.isAlphabetic(ch)) {
-            throw new InvalidParameterException("Invalid character");
-        }
-    }
-
 }

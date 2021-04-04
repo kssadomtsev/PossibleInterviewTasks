@@ -24,3 +24,8 @@
 */\
 
 [Code](https://github.com/kssadomtsev/PossibleInterviewTasks/tree/master/src/task3)
+
+### 4. Синхронизация методов
+Синхронизуйте два следующих метода в классе, чтобы каждый поток, входящий в метод "BlockUntilDone()", был заблокирован, пока метод "doOnce()" не будет вызван каким-либо другим потоком. Если был вызван метод "doOnce()", любой поток входящий в метод "BlockUntilDone()", может продолжить свою работу.
+ 
+[Code](https://github.com/kssadomtsev/PossibleInterviewTasks/tree/master/src/task4)
